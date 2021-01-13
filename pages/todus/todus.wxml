@@ -1,0 +1,23 @@
+<view class="contain">
+  <view class="search">
+      <image src="../../assets/plus.png" bindtap="add"></image>
+      <input type="text"  placeholder="请输入内容" bindinput='hander' value="{{input}}" bindconfirm="add"/>
+  </view>
+<block wx:if="{{todos.length}}">
+  <view class="todos">
+    <view class="item {{item.completed ? 'completed':''}} "  wx:for="{{todos}}" 
+    bindtap="choose" data-set="{{index}}">
+      <icon type="{{item.completed ?'success':'circle'}}"></icon>
+      <text >{{item.name}}</text>
+      <icon type="clear"  size="40rpx" catchtap='js' data-index ="{{index}}"></icon>
+    </view>
+   
+</view>
+  <view class="footer">
+  <text bindtap="tas">Toggle all</text>
+  <text wx:if='{{letcount}}'>{{letcount}}{{letcount > 1 ? 'items':'item'}} let</text>
+  <text bindtap="cool">clear completed</text>
+  </view>
+</block>
+
+</view>

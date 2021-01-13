@@ -1,0 +1,62 @@
+/* pages/todus/todus.wxss */
+.contain{
+    border-top: 1rpx solid #e0e0e0;
+}
+.search{
+    display: flex;
+    border: 1rpx solid #e0e0e0;
+    border-radius: 5rpx;
+    box-shadow: 0 0 10rpx #e0e0e0;
+    padding: 20rpx;
+    align-items: center;
+    margin: 15rpx;
+}
+
+.search image{
+    width: 50rpx;
+    height: 50rpx;
+   
+    
+}
+.todos{
+    
+    border: 1rpx solid #e0e0e0;
+    border-radius: 5rpx;
+    box-shadow: 0 0 5rpx #e0e0e0;
+    margin: 15rpx;
+   
+    
+}
+.todos .item{
+    display: flex;
+    padding: 20rpx;
+    border-bottom: 1rpx solid #e0e0e0 ;
+    align-items: center;
+}
+
+.todos .item.completed text{
+   color: #888;
+   text-decoration: line-through;
+}
+
+.todos .item:last-child{
+    border-bottom: 0rpx ;
+}
+.todos .item text{
+    flex: 1;
+    font-size: 30rpx;
+    color: rgb(83, 83, 83);
+}
+.todos .item icon{
+    margin-right: 20rpx;
+}
+.footer{
+    display: flex;
+    padding: 5rpx;
+}
+.footer text{
+    flex: 1;
+}
+.null text{
+   margin-left: 400rpx;
+}

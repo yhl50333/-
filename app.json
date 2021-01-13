@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/todus/todus"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TODOS",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap21.json"
+}
